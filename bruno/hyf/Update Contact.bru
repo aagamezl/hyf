@@ -1,0 +1,17 @@
+meta {
+  name: Update Contact
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:3002/api/contacts/hello
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name1": "test user 23"
+  }
+}

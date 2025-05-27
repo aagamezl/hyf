@@ -1,0 +1,18 @@
+meta {
+  name: Create Contact
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3002/api/contacts
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "test user 23",
+    "phonenumber": "12345678"
+  }
+}

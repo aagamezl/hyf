@@ -1,0 +1,18 @@
+meta {
+  name: Get Contact By ID
+  type: http
+  seq: 3
+}
+
+get {
+  url: http://localhost:3002/api/contacts/2
+  body: none
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "test user 22",
+    "phonenumber": "12345678"
+  }
+}
